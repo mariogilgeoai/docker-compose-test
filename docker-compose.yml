@@ -16,8 +16,8 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.next-app.rule=Host(`dok.com`)"
-      - "traefik.http.routers.next-app.entrypoints=websecure"
-      - "traefik.http.routers.next-app.tls.certResolver=letsencrypt"
+      #- "traefik.http.routers.next-app.entrypoints=websecure"
+      #- "traefik.http.routers.next-app.tls.certResolver=letsencrypt"
       - "traefik.http.services.next-app.loadbalancer.server.port=3000"
 networks:
   dokploy-network:
